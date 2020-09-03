@@ -54,7 +54,7 @@ p {
 
 @media screen and (min-width: 900px) {
   .card {
-    flex: 1 1 calc(33% - 2rem);
+    flex: 1 1 calc(25% - 2rem);
   }
 }
 
@@ -67,5 +67,45 @@ p {
 }
 
 .card:nth-child(5n) h1 {
+  background-image: linear-gradient(120deg, #63a539 0%, #b4ca3a 100%);
+}
+
+
+
+.gestor {
+  margin: 1rem;
+  background: white;
+  box-shadow: 2px 4px 25px rgba(0, 0, 0, .1);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all .2s linear;
+}
+
+.gestor:hover {
+  box-shadow: 2px 8px 45px rgba(0, 0, 0, .15);
+  transform: translate3D(0, -10px, 0);
+}
+
+@media screen and (min-width: 600px) {
+  .gestor {
+    flex: 1 1 calc(50% - 2rem);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .gestor {
+    flex: 1 1 calc(33% - 2rem);
+  }
+}
+
+.gestor:nth-child(2n) h1 {
+  background-image: linear-gradient(120deg, #63a539 0%, #b4ca3a 100%);
+}
+
+.gestor:nth-child(4n) h1 {
+  background-image: linear-gradient(120deg, #63a539 0%, #b4ca3a 100%);
+}
+
+.gestor:nth-child(5n) h1 {
   background-image: linear-gradient(120deg, #63a539 0%, #b4ca3a 100%);
 }
